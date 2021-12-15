@@ -1,0 +1,321 @@
+{
+	"info": {
+		"_postman_id": "2277169f-4222-486b-a68e-1c41dd47de87",
+		"name": "SensorManager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SetSensorValues",
+			"item": [
+				{
+					"name": "setAirHumidity",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"value\": 255\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/air-humid",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"air-humid"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "setAirPressure",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"value\": 255\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/air-press",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"air-press"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "setLightLevel",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"value\": 255\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/light",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"light"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "setSoundLevel",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"value\": 255\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/sound",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sound"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "setRain",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"value\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/rain",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rain"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "setColor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"R\": 255,\r\n    \"G\": 255,\r\n    \"B\": 255\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/color",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"color"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GetSensorValues",
+			"item": [
+				{
+					"name": "getAirHumidity",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/air-humid",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"air-humid"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAirPressure",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/air-press",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"air-press"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getLightLevel",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/light",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"light"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getSoundLevel",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/sound",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sound"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getRain",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/rain",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rain"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getColor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/color",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"color"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Settings",
+			"item": [
+				{
+					"name": "Settings",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"keepOldLogs\": true,\r\n    \"amount\":3,\r\n    \"enableConsoleDebug\": true,\r\n    \"level\": \"Debug\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/settings",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"settings"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
